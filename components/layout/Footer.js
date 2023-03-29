@@ -4,6 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React from "react";
+import presale from "../../assets/images/presale.png";
+
 import VuzecWhite from "../../assets/images/logo/vuzec-white.svg";
 import Button from "../Button";
 import UpcomingDrop from "../UpcomingDrop";
@@ -19,12 +21,15 @@ const Footer = () => {
             (router.route.includes("/blog") && "hidden")
         )}
       >
-        <div className="w-full">
+        <div>
+          <Image src={presale} fill className="object-cover" />
+        </div>
+        <div className="w-full z-20">
           <div className="w-full 2xl:max-w-[1500px] xl:max-w-[1200px] sm:max-w-lg lg:px-5 lg:max-w-none mx-auto flex justify-between items-center flex-wrap">
             <UpcomingDrop />
             <div className="w-full max-w-sm flex flex-col gap-4 mt-8">
               <p className="font-bold text-xl sm:text-[25px] text-white">
-                what are you waiting for?
+                what are you waiting for?a
               </p>
               <Link href="https://app.vuzec.com/" target="_blank">
                 <Button>JOIN THE PRESALE</Button>
