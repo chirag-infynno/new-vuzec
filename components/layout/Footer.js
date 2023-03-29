@@ -1,22 +1,22 @@
-import { Discord, Insta, Twitter } from '../../assets/images/logo'
-import classNames from 'classnames'
-import Image from 'next/image'
-import Link from 'next/link'
-import { useRouter } from 'next/router'
-import React from 'react'
-import VuzecWhite from '../../assets/images/logo/vuzec-white.svg'
-import Button from '../Button'
-import UpcomingDrop from '../UpcomingDrop'
+import { Discord, Insta, Twitter } from "../../assets/images/logo";
+import classNames from "classnames";
+import Image from "next/image";
+import Link from "next/link";
+import { useRouter } from "next/router";
+import React from "react";
+import VuzecWhite from "../../assets/images/logo/vuzec-white.svg";
+import Button from "../Button";
+import UpcomingDrop from "../UpcomingDrop";
 
 const Footer = () => {
-  const router = useRouter()
+  const router = useRouter();
   return (
     <div className="bg-black w-full">
       <div
         className={classNames(
-          'relative w-full px-8 py-12 sm:px-0 sm:py-0 h-auto sm:h-[708px]  bg-no-repeat bg-cover flex items-center',
-          router.route.includes('/about') ||
-            (router.route.includes('/blog') && 'hidden'),
+          "relative w-full px-8 py-12 sm:px-0 sm:py-0 h-auto sm:h-[708px]  bg-no-repeat bg-cover flex items-center",
+          router.route.includes("/about") ||
+            (router.route.includes("/blog") && "hidden")
         )}
       >
         <div className="w-full">
@@ -98,7 +98,7 @@ const Footer = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

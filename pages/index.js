@@ -51,6 +51,7 @@ import { Dropdown } from "../components/Dropdown";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { MusicWave } from "../components/MusicWave";
+import graceBg from "../assets/images/grace-bg.png";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 ({
@@ -235,6 +236,7 @@ export default function Home() {
             src={HomeImages}
             style={{ zIndex: 0 }}
             fill
+            priority
             className="object-cover"
           />
         </div>
@@ -660,6 +662,9 @@ export default function Home() {
       <section className="w-full relative">
         <div className="relative h-[736px] w-full  bg-cover bg-no-repeat bg-[50%_60%]">
           {/* <div className="relative h-[736px] w-full bg-graceBg bg-cover bg-no-repeat bg-[50%_60%]"> */}
+          <div>
+            <Image src={graceBg} fill className="object-cover" priority />
+          </div>
           <div className="absolute bottom-0 z-20 h-80 w-full" />
           <div className="relative z-30 mx-auto flex h-[736px] max-w-7xl flex-col justify-end p-8 pb-16 text-white md:pb-16">
             <p className="text-2xl">
