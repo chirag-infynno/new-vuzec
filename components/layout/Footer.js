@@ -14,7 +14,7 @@ const Footer = () => {
     <div className="bg-black w-full">
       <div
         className={classNames(
-          'relative w-full px-8 py-12 sm:px-0 sm:py-0 h-auto sm:h-[708px] bg-presale bg-no-repeat bg-cover flex items-center',
+          'relative w-full px-8 py-12 sm:px-0 sm:py-0 h-auto sm:h-[708px]  bg-no-repeat bg-cover flex items-center',
           router.route.includes('/about') ||
             (router.route.includes('/blog') && 'hidden'),
         )}

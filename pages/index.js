@@ -227,7 +227,7 @@ export default function Home() {
           content="Vuzec is the NFT Music Platform. We offer a digital alternative to traditional record labels - giving control back to the artists. So create your first music NFTs with the NFT market for musicians."
         />
       </Head>
-      <section className="bg-no-repeat bg-cover h-full pt-44 lg:pt-0 pb-20 lg:h-[1160px] w-full">
+      <section className="relative bg-no-repeat bg-cover h-full pt-44 lg:pt-0 pb-20 lg:h-[1160px] w-full">
         <div className="flex flex-col justify-center lg:flex-row lg:items-center h-full w-full px-5 md:px-14 max-w-[1500px] mx-auto">
           <div className="flex flex-col gap-8 md:ap-16">
             <div className="w-full max-w-[635px] lg:max-w-[725px] flex flex-col gap-3">
