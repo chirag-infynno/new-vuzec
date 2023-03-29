@@ -253,7 +253,7 @@ export default function Home() {
       <section className="w-full bg-[#B71544] xs:px-7 px-2 sm:px-5 lg:px-0 py-8">
         <div className="flex flex-wrap justify-between max-w-4xl mx-auto font-extrabold text-xs sm:text-sm md:text-2xl lg:text-3xl text-white">
           <p className="cursor-pointer hover:underline underline-offset-8">
-            stay tuned
+            stay tunedasc
           </p>
           <p>•</p>
           <Link target="_blank" href={'https://twitter.com/vuzecmx'}>
