@@ -16,6 +16,7 @@ const UpcomingDrop = ({ home }) => {
             alt="NFT Musicians"
             fill
             className="object-cover"
+            priority
           />
         </div>
         <div className="relative block sm:hidden overflow-hidden !rounded-[13px] max-w-sm">
