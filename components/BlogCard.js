@@ -18,7 +18,7 @@ export const BlogCard = ({ title, discription, date }) => {
         </div>
         <div className="flex justify-between">
           <span className="flex items-center text-[#B71544]">
-            Read morea {'>'}
+            Read moreaascc {'>'}
           </span>
           <span className="">{date} </span>
         </div>
