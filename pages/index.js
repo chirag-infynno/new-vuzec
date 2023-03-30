@@ -42,6 +42,8 @@ import Triangle16 from "../assets/images/triangle16.png";
 import Triangle17 from "../assets/images/triangle17.png";
 import TriangleImg2 from "../assets/images/triangleimg2.png";
 import HomeImages from "../assets/images/home.png";
+import SoundGif from "../assets/sound.gif";
+
 import JungleRule from "../assets/images/jungle-rules.svg";
 import CustomSlider from "../components/CustomSlider";
 import PressRelease from "../components/PressRelease";
@@ -234,17 +236,16 @@ export default function Home() {
         <div className="z-10">
           <Image
             src={HomeImages}
-            style={{ zIndex: 0 }}
             fill
             priority
-            className="object-cover"
+            className="object-left md:object-center object-cover"
           />
         </div>
         <div className="!z-30 absolute top-0 flex flex-col justify-center lg:flex-row lg:items-center h-full w-full px-5 md:px-14 max-w-[1500px] mx-auto">
           <div className="flex flex-col gap-8 md:ap-16">
             <div className="w-full max-w-[635px] lg:max-w-[725px] flex flex-col gap-3">
-              <h1 className="font-bold text-4xl leading-tight md:text-5xl md:leading-tight lg:text-6xl lg:leading-tight xl:text-7xl xl:leading-[85px] text-white">
-                INVEST IN THE MUSIC YOU LOVE
+              <h1 className="font-bold text-2xl leading-tight md:text-2xl md:leading-tight lg:leading-tight xl:leading-[85px] text-white">
+                INVEST IN THE MUSIC YOU LOVEas
               </h1>
               <p className="font-bold text-xl md:text-2xl text-white">
                 Don’t just listen to music, be an early supporter and claim the
@@ -327,7 +328,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="flex md:hidden flex-col items-center gap-4 mt-10 mx-auto">
+            {/* <div className="flex md:hidden flex-col items-center gap-4 mt-10 mx-auto">
               <div className="1 grid grid-cols-3 gap-4">
                 <div>
                   <Image
@@ -487,7 +488,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
             <div className="right mx-auto xl:mx-0 mt-10 xl:-mt-20 hidden md:flex flex-col items-center gap-4">
               <div className="1 grid grid-cols-3 gap-4">
                 <div>
@@ -645,8 +646,12 @@ export default function Home() {
               </div>
               <div className=" grid grid-cols-8 w-full mr-[70px] gap-4">
                 <div className="col-span-5 h-full relative self-center overflow-x-hidden ml-9 lg:ml-0">
-                  <div className="">
-                    <MusicWave animationStyle={"justify-end"} />
+                  <div className="bg-red-500 relative h-16">
+                    {/* <video muted autoPlay loop>
+                      <source src="sound.gif" type="video/mp4" />
+                    </video> */}
+                    <Image src={SoundGif} className="text-red-600" fill></Image>
+                    {/* <MusicWave animationStyle={"justify-end"} /> */}
                   </div>
                 </div>
                 <div className="col-span-3">
